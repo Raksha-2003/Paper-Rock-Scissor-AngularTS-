@@ -1,0 +1,107 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 text-center">
+ <button [hidden]="start_but" class="btn btn-secondary main_btn" (click)="start_game()">Start Game</button>
+ 
+<div [hidden]="!start_but">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+
+                <div class="row">
+                    <div class="col-12  mt-1 rounded hum1"><H1><i>HUMAN</i></H1></div>
+                </div>
+
+                <button (click)="paper()" class="btn btn-secondary human">paper</button><br>
+                <button (click)="rock()"class="btn btn-secondary human">Rock</button><br>
+                <button (click)="sci()" class="btn btn-secondary human">Scissor</button>
+
+                </div>
+                
+            <div class="col-6 main_box">
+                <h1><i>Main container</i></h1>
+                <div class="row">
+                    <div class="col-6 game_vid">Human 
+                        <img [src]="l_img_url" height="150px">
+                        
+
+                    </div>
+                    <div class="col-6 game_vid">Machine 
+                        <img [src]="r_img_url" height="150px">
+                        
+                    </div>
+                </div>
+                <!--match-->
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Match Number: <span style="color: coral">{{t_match}}</span></h2>
+                    </div>
+                </div>
+                <!--score-->
+                <div class="row">
+                <div class="col-6">
+                    <h2>HUMAN</h2>
+                    <hr style="border:solid 2px;">
+                    <h4><i>WIN:</i>
+                        <span style="color: coral;
+                          font-weight: 700;
+                          color: black;
+                        background-color:gray;
+                    ">{{h_win}} score</span> </h4>
+                    <h4><i>DRAW:</i> 
+                        <span style="color: coral;
+                          font-weight: 700;
+                          color: black;
+                        background-color:gray;
+                    ">{{h_draw}}</span></h4>
+                    <h4><i>LOSS: </i> 
+                        <span style="color: coral;
+                          font-weight: 700;
+                        background-color:gray;
+                        color: black;
+                    ">{{h_lost}} matches</span></h4>
+                </div>
+                <div class="col-6">
+                    <h2>MACHINE</h2>
+                    <hr style="border:solid 2px;">
+                    <h4><i>WIN:</i>
+                        <span style="color: coral;
+                          font-weight: 700;
+                          color: black;
+                        background-color:gray;
+                    ">{{m_win}}score</span>
+                    </h4>
+                    <h4><i>DRAW:</i>
+                        <span style="color: coral;
+                          font-weight: 700;
+                          color: black;
+                        background-color:gray;
+                    ">{{m_draw}}</span></h4>
+                    <h4><i>LOSS:</i> 
+                        <span style="color: coral;
+                          font-weight: 700;
+                          color: black;
+                        background-color:gray;
+                    ">{{m_lost}} matches</span></h4>
+                </div>
+                </div>
+            
+                
+        </div>
+            <div class="col-3">
+
+                <div class="row">
+                    <div class="col-12  mt-1 rounded mac1"><h1><i>MACHINE</i></h1></div>
+                </div>
+            
+
+                <button class="btn btn-secondary machine">paper</button><br>
+                <button class="btn btn-secondary machine">Rock</button><br>
+                <button class="btn btn-secondary machine">Scissor</button>
+                </div>
+        </div>
+    </div>
+        <div class="c0l-md-1"></div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+.main_btn{
+    margin-top: 50px;
+    height:300px;
+    width:300px;
+    border-radius: 50%;
+    font-size:40px;
+}
+.hum1{
+    height: 70px;
+    color:black;
+    border:double;
+    background-color:#d96d76;
+}
+.mac1{
+    height: 70px;
+    color:black;
+    border: double;
+    background-color:#d96d76;
+
+}
+.human{
+    margin: 5px;
+    height: 100px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border-width: 10px;
+    border-color: #FFD8C5 #FEA889 ;
+}
+.human:hover{
+    background-image:linear-gradient(gray 0%,#d96d76 60%);
+    color: black;
+    height: 160px;
+    width: 160px;
+}
+.machine{
+    margin: 5px;
+    height: 100px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border-width: 10px;
+    border-color:#FFD8C5 #FEA889;
+}
+
+.machine:hover{
+    background-image:linear-gradient(gray 0%, #d96d76 100%);
+    color: black;
+    height: 160px;
+    width: 160px;
+}
+.main_box{
+    border:solid 5px black;
+    margin-top: 50px;
+    border-radius: 5%;
+    border: double;
+    border-width :10px;
+    background-color: #FEA889;
+
+    
+}
+.game_vid{
+    border:solid 5px;
+    border-radius: 20%;
+    border-color:black;
+    height:250px ;
+    width: 150px; 
+    background-color: white;
+    
+
+}
